@@ -3,24 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Information Form</title>
+    <title>Order Picking Page</title>
 </head>
 <body>
-<h1>User Information</h1>
+<h1 align="center">Order Information</h1>
+<div align="center">
 <form action="/submit" method="post">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required><br><br>
+    <label for="productCode">Product Code:</label>
+    <input type="text" id="productCode" name="productCode" required><br><br>
 
-    <label for="age">Age:</label>
-    <input type="number" id="age" name="age" required><br><br>
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" name="quantity" required><br><br>
+
+    <label for="unitPrice">unitPrice:</label>
+    <input type="number" id="unitPrice" name="unitPrice" required><br><br>
 
     <input type="submit" value="Submit">
 </form>
-
-<h2>Manage User Information</h2>
-<button onclick="window.location.href='/update'">Update User</button>
-<button onclick="window.location.href='/delete'">Delete User</button>
-<button onclick="window.location.href='/view'">View Users</button>
-<a href="/hello">Back to Home</a>
+</div>
+<h2>Manage Order Information</h2>
+<button onclick="window.location.href='/view'">View Orders</button>
+<a href="/orders">Back to Home</a>
 </body>
 </html>
